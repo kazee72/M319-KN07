@@ -1,0 +1,19 @@
+flowchart TD
+  A([Start]) --> B[Initialize game]
+  B --> C[Load lyric snippets]
+  C --> D[Select random snippet]
+  D --> E[Display snippet & ask for guess]
+
+  E --> F{Correct guess?}
+  F -- Yes --> G[Increase score<br/>Show 'Correct!']
+  F -- No --> H{Attempts left?}
+  H -- Yes --> E
+  H -- No --> I[Reveal answer]
+
+  G --> J{More rounds?}
+  I --> J
+
+  J -- Yes --> D
+  J -- No --> K[Show final score]
+
+  K --> Z([End])
