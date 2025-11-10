@@ -81,7 +81,7 @@ Choose your challenge level based on your confidence:
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/yourusername/M319-KN07.git
+   git clone https://github.com/kazee72/M319-KN07.git
    cd M319-KN07
    ```
 
